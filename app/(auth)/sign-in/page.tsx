@@ -35,8 +35,10 @@ const SignIn = () => {
   }
 
   return (
-    <main className="h-full flex w-[375px] bg-yellow-300 flex-col items-center justify-between">
-      <h1 className="text-3xl">Log in</h1>
+    <main className="auth-form">
+      <h1 className="text-3xl">
+        <strong>Log in </strong>
+      </h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full">
           <FormField
@@ -69,7 +71,7 @@ const SignIn = () => {
         </form>
       </Form>
 
-      <p>
+      <p className="text-center">
         <span>
           By signing in to Duolingo, you agree to our{' '}
           <a href="https://www.duolingo.com/terms?wantsPlainInfo=1">
@@ -77,17 +79,17 @@ const SignIn = () => {
           </a>
           and
           <a href="https://www.duolingo.com/privacy?wantsPlainInfo=1">
-            <b>Privacy Policy</b>
+            <b> Privacy Policy</b>
           </a>
           .
         </span>
       </p>
 
-      <p>
+      <p className="text-center">
         <span>
           This site is protected by reCAPTCHA Enterprise and the Google{' '}
-          <a href="https://policies.google.com/privacy">Privacy Policy</a> and{' '}
-          <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          <a href="https://policies.google.com/privacy"> Privacy Policy</a> and{' '}
+          <a href="https://policies.google.com/terms"> Terms of Service</a> apply.
         </span>
       </p>
     </main>

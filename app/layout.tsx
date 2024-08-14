@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={(cn('h-screen w-screen'), DINRound.className)}>{children}</body>
+      <body className={cn('body', DINRound.className)}>{children}</body>
     </html>
   );
 }
